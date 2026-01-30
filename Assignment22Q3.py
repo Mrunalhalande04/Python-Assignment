@@ -3,9 +3,9 @@ class Arithematic:
         self.value1=0
         self.value2=0
 
-    def Accept(self,val1,val2):
-        self.value1=val1
-        self.value2=val2
+    def Accept(self):
+        self.value1=int(input("Enter first number "))
+        self.value2=int(input("Enter second number "))
         
     def Addition(self):
         return self.value1+self.value2
@@ -21,14 +21,9 @@ class Arithematic:
     
 def main():
 
-    print("Enter first number :")
-    no1=int(input())
-
-    print("Enter second number :")
-    no2=int(input())
 
     aobj=Arithematic()
-    aobj.Accept(no1,no2)
+    aobj.Accept()
 
     add=aobj.Addition()
     print("Addition is :",add)
@@ -44,7 +39,7 @@ def main():
 
 
     aobj1=Arithematic()
-    aobj1.Accept(no1,no2)
+    aobj1.Accept()
 
     add=aobj1.Addition()
     print("Addition is :",add)
