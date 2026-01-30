@@ -8,8 +8,8 @@ class circle:
         self.Circum=0.0
 
 
-    def Accept(self,No):
-        self.Radius=No
+    def Accept(self):
+        self.Radius=int(input("Enter radius of circle"))
         
 
     def CalculateArea(self):
@@ -29,39 +29,25 @@ class circle:
 
 def main():
 
-    print("Enter Radius of Circle :")
-    Radi=int(input())
-
     cobj1=circle()
-    cobj1.Accept(Radi)
+    cobj1.Accept()
     cobj1.CalculateArea()
     cobj1.CalculateCircumference()
     cobj1.Display()
 
 
     cobj2=circle()
-    cobj2.Accept(Radi)
+    cobj2.Accept()
     cobj2.CalculateArea()
     cobj2.CalculateCircumference()
     cobj2.Display()
 
 
     cobj3=circle()
-    cobj3.Accept(Radi)
+    cobj3.Accept()
     cobj3.CalculateArea()
     cobj3.CalculateCircumference()
     cobj3.Display()
-
-
-    cobj4=circle()
-    cobj4.Accept(Radi)
-    cobj4.CalculateArea()
-    cobj4.CalculateCircumference()
-    cobj4.Display()
-
-
-
-    
 
 if __name__ =="__main__":
     main()
